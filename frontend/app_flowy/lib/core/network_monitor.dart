@@ -49,7 +49,7 @@ class NetworkListener {
       }
     }();
     Log.info("Network type: $networkType");
-    final state = NetworkStatePB.create()..ty = networkType;
+    final state = NetworkStatePB.create()..ty = networkType!;
     NetworkEventUpdateNetworkType(state).send().then((result) {
       result.fold(
         (l) {},

@@ -107,6 +107,7 @@ class _DocumentPageState extends State<DocumentPage> {
       customBuilders: {
         // Divider
         kDividerType: DividerWidgetBuilder(),
+        kDottedDividerType: DottedDividerWidgetBuilder(),
         // Math Equation
         kMathEquationType: MathEquationNodeWidgetBuidler(),
         // Code Block
@@ -121,6 +122,7 @@ class _DocumentPageState extends State<DocumentPage> {
       shortcutEvents: [
         // Divider
         insertDividerEvent,
+        // insertDottedDividerEvent,
         // Code Block
         enterInCodeBlock,
         ignoreKeysInCodeBlock,
